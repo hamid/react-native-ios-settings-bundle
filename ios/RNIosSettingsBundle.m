@@ -1,5 +1,6 @@
 
 #import "RNIosSettingsBundle.h"
+#import <React/RCTLog.h>
 
 @implementation RNIosSettingsBundle
 
@@ -9,19 +10,15 @@
 }
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(addEvent:(NSString *)name location:(NSString *)location callback:(RCTResponseSenderBlock)callback)
+RCT_EXPORT_METHOD(getValByKey:(NSString *)key  callback:(RCTResponseSenderBlock)callback)
 {
 
-    //NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    //loginName.text = [defaults objectForKey:@"login_name"];
-    RCTLogInfo(@"Pretending to create an event %@ at %@", defaults, location);
 
-    if([defaults objectForKey:@"name_preference"] == nil)
-        callback(@[[NSNull null], @"noval"]);
+    if([defaults objectForKey:key] == nil)
+        callback(@[ @[ @true ,@"value is empty or the key is not defined"] , [NSNull null]]);
     else
-         callback(@[[NSNull null], [defaults objectForKey:@"name_preference"]]);
+         callback(@[[NSNull null], [defaults objectForKey:key]]);
 }
 
 @end

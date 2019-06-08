@@ -1,18 +1,14 @@
 
-import { NativeModules } from 'react-native';
+import { NativeModules,Platform } from 'react-native';
 
-const { RNTestLib } = NativeModules;
+const { RNIosSettingsBundle } = NativeModules;
 
 export default {
-    testText: (msg) => {
-        console.log("ios settings",RNTestLib,NativeModules)
-        RNTestLib.addEvent('Birthday Party', '4 Privet Drive, Surrey',(err,data)=>{
-          alert(data);
-        });
-        // RNTestLib.testText(msg, (res) => {
-        //     console.log("in cb")
-        //     return res
-        // })
+    get: (key,callback) =>
+    {
+          if(Platform == 'android')
+            return callback([1,'it works only on ios!']);
+
+        RNIosSettingsBundle.getValByKey(key,callback);
     }
 };
-// export default RNTestLib;

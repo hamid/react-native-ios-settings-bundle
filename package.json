@@ -1,18 +1,44 @@
 {
-  "name": "react-native-ios-settings-bundle",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_from": "react-native-ios-settings-bundle@^1.0.0",
+  "_id": "react-native-ios-settings-bundle@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-fDKTvTT4fojNGOJMSMiIrBxwO0q+lMuQ5kxKQbxdbH6qTE3Iyv5Fu3e5rIe/WmfJGP3ZsuE8cunqsM1IZraeOQ==",
+  "_location": "/react-native-ios-settings-bundle",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "react-native-ios-settings-bundle@^1.0.0",
+    "name": "react-native-ios-settings-bundle",
+    "escapedName": "react-native-ios-settings-bundle",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-ios-settings-bundle/-/react-native-ios-settings-bundle-1.0.0.tgz",
+  "_shasum": "03d7197857c2bebd620baedd25c32f43832cb097",
+  "_spec": "react-native-ios-settings-bundle@^1.0.0",
+  "_where": "/Users/hamid/Projects/React-native/Production/AdiritHomeArchivist",
+  "author": "",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "## Getting started",
   "keywords": [
     "react-native"
   ],
-  "author": "",
   "license": "",
+  "main": "index.js",
+  "name": "react-native-ios-settings-bundle",
   "peerDependencies": {
     "react-native": "^0.41.2",
     "react-native-windows": "0.41.0-rc.1"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.1"
 }
