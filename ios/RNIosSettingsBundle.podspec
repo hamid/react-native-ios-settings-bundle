@@ -6,7 +6,8 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNIosSettingsBundle
                    DESC
-  s.homepage     = ""
+  s.summary = 'iOS, the app settings'
+  s.homepage = "https://www.npmjs.com/package/react-native-ios-settings-bundle"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
