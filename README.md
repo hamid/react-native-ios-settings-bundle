@@ -28,11 +28,18 @@ The preference items is an array of dictionaries of controls. Each item has *ide
 
 `$ npm install react-native-ios-settings-bundle --save`
 
-### Mostly automatic installation
+For React Native >= 0.60.0 run the following command in the `ios/` folder and
+skip the rest of the section.
+
+```sh
+pod install
+```
+
+### Mostly automatic installation (React Native < 0.60)
 
 `$ react-native link react-native-ios-settings-bundle`
 
-### Manual installation
+### Manual installation (React Native < 0.60)
 
 
 #### iOS
