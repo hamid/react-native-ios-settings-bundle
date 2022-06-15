@@ -38,11 +38,10 @@
   "main": "index.js",
   "name": "react-native-ios-settings-bundle",
   "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
+    "react-native": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.2.1"
+  "version": "1.2.3"
 }
