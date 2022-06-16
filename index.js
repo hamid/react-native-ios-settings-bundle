@@ -1,14 +1,9 @@
+/**
+ * @format
+ */
 
-import { NativeModules,Platform } from 'react-native';
+import {AppRegistry} from 'react-native';
+import App from './App';
+import {name as appName} from './app.json';
 
-const { RNIosSettingsBundle } = NativeModules;
-
-export default {
-    get: (key,callback) =>
-    {
-          if(Platform == 'android')
-            return callback([1,'it works only on ios!']);
-
-        RNIosSettingsBundle.getValByKey(key,callback);
-    }
-};
+AppRegistry.registerComponent(appName, () => App);

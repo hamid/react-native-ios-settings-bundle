@@ -1,0 +1,6 @@
+module Pods_iossettingsbundle2 {
+  umbrella header "Pods-iossettingsbundle2-umbrella.h"
+
+  export *
+  module * { export * }
+}
