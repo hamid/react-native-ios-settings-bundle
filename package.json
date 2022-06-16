@@ -37,11 +37,29 @@
   "license": "",
   "main": "index.js",
   "name": "react-native-ios-settings-bundle",
-  "peerDependencies": {
+  "dependencies": {
+    "react": "*",
     "react-native": "*"
   },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/runtime": "^7.18.3",
+    "@react-native-community/eslint-config": "^3.0.2",
+    "babel-jest": "^28.1.1",
+    "eslint": "^8.17.0",
+    "jest": "^28.1.1",
+    "metro-react-native-babel-preset": "^0.71.1",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
   },
   "version": "1.2.4"
 }

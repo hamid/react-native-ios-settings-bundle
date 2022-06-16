@@ -1,3 +1,4 @@
+//  RCTIosSettingsBundle.h
 #import <React/RCTBridgeModule.h>
-@interface RCTReactOneCustomMethod : NSObject <RCTBridgeModule>
+@interface RCTIosSettingsBundle : NSObject <RCTBridgeModule>
 @end
